@@ -64,151 +64,30 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="wxbook">wxbook</h1>
-				<p>3D-你看上去是对的，就是对的。2D-尽量让动画看着舒服一些。</p>
-				<p>本书讲如何做游戏，而不是引擎如何用。</p>
-				<p>第一章 初识微信小游戏</p>
+				<h1 id="ag">ag</h1>
+				<blockquote>
+					<p>ag是一个基于Egret引擎所开发的游戏开发库。</p>
+				</blockquote>
+				<h2 id="-">安装</h2>
+				<ol>
+					<li>下载或clone该库，将bin目录中的ag.文件夹拷贝到你的游戏项目中的libs中。</li>
+					<li>在<code>egretProperties.json</code>文件中的<code>modules</code>字段加入如下库标记。</li>
+				</ol>
+				<pre><code>{
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"ag"</span>,
+    <span class="hljs-attr">"path"</span>: <span class="hljs-string">"./libs/ag"</span>
+}
+</code></pre><h2 id="-">功能</h2>
 				<ul>
-					<li>工具安装</li>
-					<li>第一个微信小游戏</li>
-					<li>*项目结构</li>
-					<li>微信小游戏环境</li>
-					<li>小游戏开发注意事项</li>
-					<li>账号申请步骤</li>
-					<li>基本调试方法</li>
-					<li>----del----- 本书用到的TypeScript知识点</li>
-					<li>*API文档的使用</li>
-					<li>*简单资源加载</li>
-					<li>*显示列表</li>
-					<li>*事件</li>
+					<li>向量</li>
+					<li>音频管理器</li>
 				</ul>
-				<p>第二章 绘图与运动</p>
-				<ul>
-					<li>*绘制矢量图</li>
-					<li>*简单的移动</li>
-					<li>速度与加速度</li>
-					<li>局部坐标系</li>
-					<li>任意方向移动</li>
-					<li>圆周运动</li>
-					<li>运动中加入重力 </li>
-					<li>三角函数的使用</li>
-					<li>*坐标系</li>
-					<li>*向量</li>
-					<li>贪吃蛇</li>
-					<li>*简单手势</li>
-					<li>手势识别 magictouch</li>
-					<li>跳一跳</li>
-					<li>屏幕旋转</li>
-					<li>热更新</li>
-					<li>图片格式与体积</li>
-					<li>骨骼动画</li>
-					<li>粒子特效</li>
-					<li>特效</li>
-					<li>EUI</li>
-					<li>*九宫格</li>
-					<li>引擎的生命周期</li>
-					<li>第三方库</li>
-					<li>牛顿定律</li>
-					<li>运用陀螺仪的重力小球</li>
-					<li>loading进度条实现</li>
-				</ul>
-				<p>第三章</p>
-				<ul>
-					<li>作用力</li>
-					<li>动力学</li>
-					<li>碰撞</li>
-					<li>抛物线 投篮游戏</li>
-					<li>飞机，船，气垫船，车</li>
-					<li>Dragonbones</li>
-				</ul>
-				<p>第四章</p>
-				<ul>
-					<li>Astar寻路</li>
-					<li>*摇杆实现 </li>
-					<li>ECS框架</li>
-					<li>四叉树 放到碰撞里</li>
-					<li>2048 算法</li>
-					<li>华容道 可以讲讲配置</li>
-					<li>棋牌 偏网络</li>
-					<li>塔防处理</li>
-					<li>四方向和八方向</li>
-					<li>有限状态机</li>
-					<li>消除游戏算法</li>
-					<li>回合制</li>
-					<li>抽奖转盘，扇形内最大正方形边长</li>
-					<li>位3D翻拍效果</li>
-					<li>插帧运算</li>
-					<li>滤镜 混色 ，一些像素操作算法</li>
-					<li>地图的制作</li>
-					<li>滚轴地图实现 横向 纵向 打飞机</li>
-					<li>滚轴地图视差</li>
-					<li>2.5D地图</li>
-					<li>四边格地图</li>
-					<li>六边格地图</li>
-					<li>地图的拼接，地图数据，地图分层</li>
-					<li>欧拉角</li>
-				</ul>
-				<p>第二章 加载与缓存资源</p>
-				<ul>
-					<li>加载游戏资源</li>
-					<li>游戏资源缓存</li>
-					<li>使用游戏资源</li>
-					<li>游戏资源配置策略</li>
-					<li>示例</li>
-				</ul>
-				<p>第三章 音频的操作</p>
-				<ul>
-					<li>加载音频</li>
-					<li>控制音频</li>
-					<li>示例</li>
-				</ul>
-				<p>第四章 网络的操作</p>
-				<ul>
-					<li>短连接操作</li>
-					<li>protobuf</li>
-					<li>WebSocket长连接操作</li>
-					<li>上传文件</li>
-					<li>示例</li>
-				</ul>
-				<p>第五章 获取用户信息</p>
-				<ul>
-					<li>用户授权与登录</li>
-					<li>用户关系链处理</li>
-					<li>示例</li>
-				</ul>
-				<p>第六章 编写游戏逻辑</p>
-				<pre><code>这张会开发一个完整的游戏，用到前面所介绍的内容
-具体小结，需案例编写完成后安排，以一个非常简单的小游戏
-覆盖基本游戏中，渲染，音频，网络等功能用法</code></pre><p>游戏更新</p>
-				<p>第七章 性能与调试</p>
-				<ul>
-					<li>分包加载 </li>
-					<li>渲染性能优化</li>
-					<li>模拟器调试</li>
-					<li>真机调试</li>
-				</ul>
-				<p>第八章 分享</p>
-				<ul>
-					<li>游戏分享</li>
-					<li>二维码分享</li>
-					<li>示例</li>
-				</ul>
-				<p>第九章 小游戏生态周边</p>
-				<ul>
-					<li>游戏圈</li>
-					<li>排行榜</li>
-				</ul>
-				<p>第十章 支付与广告</p>
-				<ul>
-					<li>虚拟商品支付</li>
-					<li>游戏内支付</li>
-					<li>Banner广告</li>
-					<li>激励视频广告</li>
-				</ul>
-				<p>第十一章 发布</p>
-				<ul>
-					<li>发布</li>
-				</ul>
+				<h2 id="api-">API文档</h2>
+				<p><a href="http://ag.ashan.org">ag.ashan.org</a></p>
+				<h2 id="-">反馈</h2>
+				<p>如果你有一些问题，可以发送<a href="https://github.com/mebiusashan/ag/issues">Issues</a>或者在修改代码之后提交<a href="https://github.com/mebiusashan/ag/pulls">Pull</a>。</p>
+				<h2 id="license">License</h2>
+				<p>Copyright (c) 2018 <a href="http://ashan.org">mebiusashan</a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
